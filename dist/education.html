@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An engineering portfolio featuring work experience, technical skills, and project case studies.">
+  <title>Christopher Johnston | Engineering Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./navigation.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="layout">
+  <aside class="sidebar" aria-label="Profile and navigation">
+    <figure class="portrait">
+      <img src="./assets/portrait.jpg" width="640" height="720" alt="Sample profile photograph">
+      <figcaption>Sample portrait</figcaption>
+    </figure>
+    <div class="identity"><strong>Christopher Jonhston</strong><span>Intelligent Systems Engineer</span></div>
+    <nav aria-label="Portfolio">
+      <a href="#overview" aria-current="page"><span aria-hidden="true">⌂</span> Overview</a>
+      <a href="#experience"><span aria-hidden="true">▣</span> Work Experience</a>
+      <a href="#skills"><span aria-hidden="true">◇</span> Skills</a>
+      <a href="#projects"><span aria-hidden="true">▤</span> Projects</a>
+      <a href="#education"><span aria-hidden="true">◎</span> Education</a>
+      <a href="#contact"><span aria-hidden="true">✉</span> Contact</a>
+    </nav>
+  </aside>
+  <main id="content" tabindex="-1">
+    <header class="masthead">
+      <div><span class="mark" aria-hidden="true">+</span> Engineering portfolio</div>
+      <span class="draft">Template preview</span>
+    </header>
+    <section class="panel" id="overview" aria-labelledby="overview-title">
+      <div class="hero">
+        <p class="eyebrow">About me</p>
+        <h1 id="overview-title">Hello, I'm Christopher.</h1>
+        <p class="statement">I build systems for humanity.</p>
+        <p class="intro">I’m an engineer who likes taking an ambiguous problem and turning it into something you can build, test, and improve. My approach starts with understanding the constraints and ends with evidence that the solution works.</p>
+        <div class="actions"><a class="button primary" href="#projects">Explore projects</a><a class="button secondary" href="#experience">See work experience</a></div>
+      </div>
+      <div class="section-heading"><h2>Selected projects</h2><span>Example case studies</span></div>
+      <div class="cards">
+        <a class="card" href="#sensor-node">
+          <img src="./assets/hardware.jpg" width="750" height="400" alt="Close-up of electronic components on a circuit board">
+          <div class="card-copy"><p class="eyebrow">Embedded systems</p><h3>Environmental sensor node</h3><p>Collect reliable field data under a tight power budget.</p></div>
+        </a>
+        <a class="card" href="#test-dashboard">
+          <img src="./assets/dashboard.jpg" width="750" height="400" alt="Analytics dashboard with charts and a world map">
+          <div class="card-copy"><p class="eyebrow">Automation</p><h3>Test telemetry dashboard</h3><p>Turn test logs into a clear view of failures and trends.</p></div>
+        </a>
+      </div>
+    </section>
+    <section class="panel inner" id="experience" aria-labelledby="experience-title">
+      <h1 id="experience-title">Work Experience</h1>
+      <p class="intro">Show the scope of each role, your technical contributions, and the results you can substantiate.</p>
+      <article class="entry"><p class="eyebrow">Start year – Present</p><h2>Most recent role</h2><p class="meta">Company · Location</p><ul><li>Describe the system or process you owned and the constraints you worked within.</li><li>Explain an engineering decision you made and how you validated the outcome.</li></ul></article>
+      <article class="entry"><p class="eyebrow">Start year – End year</p><h2>Previous role</h2><p class="meta">Company · Location</p><p>Summarize your responsibilities and one result you can demonstrate.</p></article>
+    </section>
+    <section class="panel inner" id="skills" aria-labelledby="skills-title">
+      <h1 id="skills-title">Skills</h1><p class="intro">Example categories and tools to replace with the ones you use.</p>
+      <article class="entry"><h2>Design &amp; prototyping</h2><ul class="tags"><li>Requirements</li><li>CAD</li><li>Rapid prototyping</li></ul></article>
+      <article class="entry"><h2>Software &amp; automation</h2><ul class="tags"><li>Python</li><li>JavaScript</li><li>Git</li><li>Data analysis</li></ul></article>
+      <article class="entry"><h2>Test &amp; validation</h2><ul class="tags"><li>Test planning</li><li>Instrumentation</li><li>Root cause analysis</li></ul></article>
+    </section>
+    <section class="panel inner" id="projects" aria-labelledby="projects-title">
+      <h1 id="projects-title">Projects</h1>
+      <p class="intro">Two illustrative case studies. Use this format to document the constraints, tradeoffs, and validation behind your own work.</p>
+      <article class="entry" id="sensor-node"><p class="eyebrow">Embedded systems · Example</p><h2>Environmental sensor node</h2><p>A field sensor has to balance sampling frequency, wireless range, and battery life. The proposed design buffers readings locally and transmits them in batches.</p><p><strong>Validation</strong> Measure current draw in sleep, sampling, and transmission modes. Compare battery-life estimates with a representative field trial.</p></article>
+      <article class="entry" id="test-dashboard"><p class="eyebrow">Automation · Example</p><h2>Test telemetry dashboard</h2><p>When logs live on separate test stations, recurring failures are hard to see. A shared schema records the station, firmware version, and failure reason for each run.</p><p><strong>Validation</strong> Replay known-good and known-bad runs and reconcile the dashboard totals with the raw logs.</p></article>
+    </section>
+    <section class="panel inner" id="education" aria-labelledby="education-title">
+      <h1 id="education-title">Education</h1>
+      <article class="entry"><h2>Degree or qualification</h2><p class="meta">Institution · Graduation year</p><p>Include your discipline and any capstone, research, or coursework relevant to your work.</p></article>
+      <article class="entry"><h2>Certifications</h2><p>Add relevant credentials, issuing organizations, and dates.</p></article>
+    </section>
+    <section class="panel inner" id="contact" aria-labelledby="contact-title">
+      <h1 id="contact-title">Contact</h1><p class="intro">For engineering opportunities, project questions, or collaboration, get in touch by email.</p>
+      <article class="entry"><h2>Email</h2><p>your.name@example.com <small>(placeholder)</small></p></article>
+    </section>
+    <footer><span>Your Name</span></footer>
+  </main>
+</div>
+</body>
+</html>
